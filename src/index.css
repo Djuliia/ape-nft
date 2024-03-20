@@ -1,4 +1,58 @@
-@import-normalize; /* bring in normalize.css styles */
+@font-face {
+  font-family: 'Messina Sans Mono';
+  src: url('./fonts/MessinaSansMono-SemiBold.eot');
+  src: local('Messina Sans Mono SemiBold'), local('MessinaSansMono-SemiBold'),
+    url('./fonts/MessinaSansMono-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/MessinaSansMono-SemiBold.woff2') format('woff2'),
+    url('./fonts/MessinaSansMono-SemiBold.woff') format('woff'),
+    url('./fonts/MessinaSansMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Messina Sans Mono';
+  src: url('./fonts/MessinaSansMono-Light.eot');
+  src: local('Messina Sans Mono Light'), local('MessinaSansMono-Light'),
+    url('./fonts/MessinaSansMono-Light.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/MessinaSansMono-Light.woff2') format('woff2'),
+    url('./fonts/MessinaSansMono-Light.woff') format('woff'),
+    url('./fonts/MessinaSansMono-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biro Script Plus Bold US';
+  src: url('./fonts/BiroScriptUSPlus-Bold.eot');
+  src: local('Biro Script Plus Bold US'), local('BiroScriptUSPlus-Bold'),
+    url('./fonts/BiroScriptUSPlus-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/BiroScriptUSPlus-Bold.woff2') format('woff2'),
+    url('./fonts/BiroScriptUSPlus-Bold.woff') format('woff'),
+    url('./fonts/BiroScriptUSPlus-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biro Script Plus';
+  src: url('./fonts/BiroScriptPlus-Bold.eot');
+  src: local('Biro Script Plus Bold'), local('BiroScriptPlus-Bold'),
+    url('./fonts/BiroScriptPlus-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/BiroScriptPlus-Bold.woff2') format('woff2'),
+    url('./fonts/BiroScriptPlus-Bold.woff') format('woff'),
+    url('./fonts/BiroScriptPlus-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Right Grotesk Compact Black';
+  src: url('./fonts/RightGrotesk-CompactBlack.otf') format ('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
 
 body {
   margin: 0;

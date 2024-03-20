@@ -1,3 +1,13 @@
+import { GlobalStyle } from './GlobalStyle';
+import { Header } from './Header/Header';
+import { Hero } from './Hero/Hero';
+
 export const App = () => {
-  return <div>Ape NFT</div>;
+  return (
+    <>
+      <Header />
+      {/* <Hero /> */}
+      <GlobalStyle />
+    </>
+  );
 };
