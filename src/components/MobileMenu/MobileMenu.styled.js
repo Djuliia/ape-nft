@@ -13,6 +13,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   font-family: Messina Sans Mono;
+  background: ${theme.colors.bg};
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export const MenuList = styled.ul`
@@ -33,6 +37,10 @@ export const MenuList = styled.ul`
       color: ${theme.colors.accent};
       text-decoration: underline;
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 16px;
   }
 `;
 
