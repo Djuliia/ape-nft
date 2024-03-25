@@ -48,10 +48,13 @@
 }
 
 @font-face {
-  font-family: 'Right Grotesk Compact Black';
-  src: url('./fonts/RightGrotesk-CompactBlack.otf') format ('opentype');
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Right Grotesk Compact Black";
+    src: url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.eot");
+    src: url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.svg#Right Grotesk Compact Black")format("svg");
 }
 
 body {

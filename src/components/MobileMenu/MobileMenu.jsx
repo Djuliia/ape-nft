@@ -1,52 +1,10 @@
 import { Container, Footer, MenuList } from './MobileMenu.styled';
-import {
-  BtnMenu,
-  HeaderMenu,
-  LinkMenu,
-  Logo,
-} from 'components/Header/Header.styled';
-import sprite from '../../images/sprite.svg';
 
-export const MobileMenu = ({ isOpen, toggleMenu }) => {
+export const MobileMenu = ({ isOpen }) => {
   return (
     <>
       {isOpen && (
         <Container>
-          <HeaderMenu>
-            <Logo $menuOpen={isOpen} href="/">
-              <svg width="48" height="32">
-                <use href={`${sprite}#logo`} />
-              </svg>
-            </Logo>
-            <ul>
-              <li>
-                <BtnMenu $menuOpen={isOpen} onClick={toggleMenu}>
-                  Close
-                </BtnMenu>
-              </li>
-              <li>
-                <LinkMenu $menuOpen={isOpen} href="/">
-                  <svg width="16" height="16">
-                    <use href={`${sprite}#discord`} />
-                  </svg>
-                </LinkMenu>
-              </li>
-              <li>
-                <LinkMenu $menuOpen={isOpen} href="/">
-                  <svg width="16" height="16">
-                    <use href={`${sprite}#logomark`} />
-                  </svg>
-                </LinkMenu>
-              </li>
-              <li>
-                <LinkMenu $menuOpen={isOpen} href="/">
-                  <svg width="16" height="32">
-                    <use href={`${sprite}#logoX`} />
-                  </svg>
-                </LinkMenu>
-              </li>
-            </ul>
-          </HeaderMenu>
           <MenuList>
             <li>
               <a href="#about">ABOUT</a>

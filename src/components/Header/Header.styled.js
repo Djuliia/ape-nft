@@ -2,10 +2,13 @@ import styled, { css } from 'styled-components';
 import { theme } from 'theme';
 
 export const MainContainer = styled.div`
-  display: flex;
-  justify-content: center;
   padding: 54px 8px 24px;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+  }
   @media screen and (min-width: 1280px) {
     padding-top: 16px;
   }
@@ -16,7 +19,6 @@ export const HeaderMenu = styled.header`
   top: 62px;
   left: 50%;
   transform: translateX(-50%);
-  /* max-width: 480px; */
   padding: 0 16px;
   width: 100%;
   z-index: 8000;
@@ -38,10 +40,18 @@ export const Logo = styled.a`
   svg {
     fill: ${({ $menuOpen }) =>
       $menuOpen ? theme.colors.primary : theme.colors.secondary};
-    transition: ${theme.transition};
     &:hover {
       fill: ${({ $menuOpen }) =>
         $menuOpen ? theme.colors.accent : theme.colors.primary};
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    svg {
+      fill: ${theme.colors.secondary};
+      &:hover {
+        ${theme.colors.primary};
+      }
     }
   }
 `;
@@ -49,7 +59,13 @@ export const Logo = styled.a`
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 `;
+
 const buttonStyles = css`
   display: flex;
   align-items: center;
@@ -76,15 +92,21 @@ const buttonStyles = css`
   }
 
   @media screen and (min-width: 768px) {
+    background: rgba(30, 30, 30, 0.1);
+    color: ${theme.colors.secondary};
+    &:hover {
+      color: ${theme.colors.primary};
+    }
   }
 `;
 
 export const BtnMenu = styled.button`
   ${buttonStyles}
   border: none;
+  margin-left: auto;
 `;
 
-export const LinkMenu = styled.a`
+export const SocialLink = styled.a`
   ${buttonStyles}
 
   svg {
@@ -97,4 +119,25 @@ export const LinkMenu = styled.a`
         $menuOpen ? theme.colors.accent : theme.colors.primary};
     }
   }
+
+  @media screen and (min-width: 768px) {
+    svg {
+      fill: ${theme.colors.secondary};
+      &:hover {
+        fill: ${theme.colors.primary};
+      }
+    }
+  }
+`;
+
+export const MenuList = styled.ul`
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const SocialList = styled.ul`
+  align-self: flex-end;
 `;
