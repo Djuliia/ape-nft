@@ -1,7 +1,8 @@
-import { Container, Img, LeftSide, Section, TitleWrap } from './Hero.styled';
+import { Img, LeftSide, Section, TitleWrap } from './Hero.styled';
 import imgDesktop from '../../images/hero/hero_desktop.png';
 import imgTablet from '../../images/hero/hero_tablet.png';
 import imgMobile from '../../images/hero/hero_mobile.png';
+import { Container } from 'components/GlobalStyle';
 
 export const Hero = () => {
   return (

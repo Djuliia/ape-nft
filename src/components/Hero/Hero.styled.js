@@ -5,16 +5,13 @@ export const Section = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 36px 64px 19px;
+  margin: 0 auto;
+  padding: 36px 0px 19px;
   width: calc(100vw - 16px);
   background: ${theme.colors.accent};
   border-radius: 12px;
   color: ${theme.colors.secondary};
   text-align: center;
-
-  /* @media screen and (min-width: 480px) {
-    width: 464px;
-  } */
 
   @media screen and (min-width: 768px) {
     width: 736px;
@@ -26,6 +23,13 @@ export const Section = styled.section`
 
   @media screen and (min-width: 1280px) {
     width: 1248px;
+    min-height: 677px;
+    padding-top: 65px;
+    border-radius: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1408px;
     min-height: 677px;
     padding-top: 65px;
     border-radius: 24px;
@@ -72,6 +76,9 @@ export const Section = styled.section`
       &:nth-of-type(1) {
         margin-top: 132px;
       }
+      &:nth-of-type(2) {
+        margin-left: 120px;
+      }
     }
   }
 
@@ -81,7 +88,6 @@ export const Section = styled.section`
     font-size: 12px;
     line-height: 1.167;
     text-transform: uppercase;
-    width: 217px;
     &.tablet {
       display: none;
     }
@@ -89,13 +95,8 @@ export const Section = styled.section`
       display: none;
     }
 
-    @media screen and (min-width: 481px) {
-      width: 283px;
-    }
-
     @media screen and (min-width: 768px) {
       text-align: justify;
-      width: 190px;
       &.mobile {
         display: none;
       }
@@ -114,7 +115,6 @@ export const Section = styled.section`
       }
       font-size: 16px;
       line-height: 1.188;
-      width: 337px;
     }
   }
 
@@ -123,7 +123,7 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 216px;
+    width: 100%;
     border-radius: 8px;
     backdrop-filter: blur(12px);
     background: rgba(30, 30, 30, 0.1);
@@ -136,13 +136,9 @@ export const Section = styled.section`
     &:hover {
       color: ${theme.colors.primary};
     }
-    @media screen and (min-width: 481px) {
-      width: 283px;
-    }
 
     @media screen and (min-width: 768px) {
       order: 2;
-      width: 190px;
       margin-bottom: 0px;
     }
 
@@ -150,14 +146,8 @@ export const Section = styled.section`
       font-size: 28px;
       line-height: 1.214;
       padding: 16px 16px 20px;
-      width: 337px;
     }
   }
-`;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
 `;
 
 export const Img = styled.img`
@@ -167,16 +157,17 @@ export const Img = styled.img`
     width: 283px;
     position: absolute;
     bottom: 0;
-    left: 206px;
+    left: 200px;
   }
   @media screen and (min-width: 1280px) {
     height: 612px;
     width: 463px;
-    left: 373px;
+    left: 314px;
   }
 `;
 
 export const LeftSide = styled.div`
+  max-width: 283px;
   @media screen and (min-width: 768px) {
     position: absolute;
     bottom: 35px;
@@ -184,16 +175,19 @@ export const LeftSide = styled.div`
     flex-direction: column;
     align-self: flex-end;
     gap: 16px;
+    width: 190px;
   }
   @media screen and (min-width: 1280px) {
+    width: 337px;
     gap: 28px;
     bottom: 81px;
   }
 `;
 
 export const TitleWrap = styled.div`
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: space-between;
     width: 591px;
   }

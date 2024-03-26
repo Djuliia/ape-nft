@@ -2,12 +2,11 @@ import styled, { css } from 'styled-components';
 import { theme } from 'theme';
 
 export const MainContainer = styled.div`
-  padding: 54px 8px 24px;
+  padding: 54px 0px 24px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    padding-top: 16px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 16px;
@@ -21,18 +20,18 @@ export const HeaderMenu = styled.header`
   transform: translateX(-50%);
   padding: 0 16px;
   width: 100%;
-  z-index: 8000;
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
-    padding: 0;
+    padding: 0px;
     top: 66px;
     width: 704px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 39px;
-    width: 1200px;
-    padding: 0 65px;
+    top: 40px;
+    width: 1248px;
+    padding: 0 24px;
   }
 `;
 
@@ -97,6 +96,10 @@ const buttonStyles = css`
     &:hover {
       color: ${theme.colors.primary};
     }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 80px;
+    height: 80px;
   }
 `;
 

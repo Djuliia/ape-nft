@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { theme } from 'theme';
 import 'modern-normalize';
 
@@ -58,6 +58,22 @@ export const GlobalStyle = createGlobalStyle`
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
 
-
-
   `;
+export const Container = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 64px;
+  /* width: 344px; */
+  width: calc(100vw-128px);
+
+  @media screen and (min-width: 768px) {
+    align-items: start;
+    width: 720px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1160px;
+  }
+`;

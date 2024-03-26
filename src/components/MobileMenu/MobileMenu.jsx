@@ -10,16 +10,16 @@ export const MobileMenu = ({ isOpen }) => {
               <a href="#about">ABOUT</a>
             </li>
             <li>
-              <a href="#m-map">M-MAP</a>
+              <a href="/">M-MAP</a>
             </li>
             <li>
-              <a href="#faq">FAQ</a>
+              <a href="/">FAQ</a>
             </li>
             <li>
-              <a href="#arts">ARTS</a>
+              <a href="/">ARTS</a>
             </li>
             <li>
-              <a href="#mint">MINT</a>
+              <a href="/">MINT</a>
             </li>
           </MenuList>
           <Footer>© Yacht ape 2024 all rights reserved</Footer>
