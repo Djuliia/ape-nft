@@ -4,7 +4,7 @@ import { Container } from 'components/GlobalStyle';
 
 export const MindMap = () => {
   return (
-    <Section>
+    <Section id="m-map">
       <Container>
         <Title>MIND map</Title>
         <div>

@@ -33,7 +33,9 @@ export const Hero = () => {
           </h3>
           <h3 className="desktop">
             <div style={{ textAlign: 'right' }}>Yacht Ape is a collection</div>
-            of unique digital apes that you
+            <div style={{ textAlign: 'justify' }}>
+              of unique digital apes that you
+            </div>
             <div style={{ textAlign: 'left' }}>can own in NFT format</div>
           </h3>
         </LeftSide>

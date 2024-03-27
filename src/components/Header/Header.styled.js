@@ -4,10 +4,10 @@ import { theme } from 'theme';
 export const MainContainer = styled.div`
   padding: 54px 0px 24px;
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-  }
+  } */
   @media screen and (min-width: 1280px) {
     padding-top: 16px;
   }
@@ -36,6 +36,9 @@ export const HeaderMenu = styled.header`
 `;
 
 export const Logo = styled.a`
+  display: ${({ $isMobileOpen, $isScrolled }) =>
+    !$isMobileOpen && $isScrolled ? 'none' : 'block'};
+
   svg {
     fill: ${({ $menuOpen }) =>
       $menuOpen ? theme.colors.primary : theme.colors.secondary};

@@ -18,7 +18,6 @@ export const Section = styled.section`
     height: 421px;
     padding: 35px 72px 0px;
     border-radius: 16px;
-    text-align: left;
   }
 
   @media screen and (min-width: 1280px) {
@@ -96,7 +95,7 @@ export const Section = styled.section`
     }
 
     @media screen and (min-width: 768px) {
-      text-align: justify;
+      width: 190px;
       &.mobile {
         display: none;
       }
@@ -109,12 +108,15 @@ export const Section = styled.section`
     @media screen and (min-width: 1280px) {
       &.desktop {
         display: block;
+        text-align: justify;
       }
       &.tablet {
         display: none;
       }
       font-size: 16px;
       line-height: 1.188;
+      width: 337px;
+      text-align: justify;
     }
   }
 
@@ -140,12 +142,14 @@ export const Section = styled.section`
     @media screen and (min-width: 768px) {
       order: 2;
       margin-bottom: 0px;
+      width: 190px;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 28px;
       line-height: 1.214;
       padding: 16px 16px 20px;
+      width: 337px;
     }
   }
 `;
@@ -175,12 +179,11 @@ export const LeftSide = styled.div`
     flex-direction: column;
     align-self: flex-end;
     gap: 16px;
-    width: 190px;
   }
   @media screen and (min-width: 1280px) {
-    width: 337px;
     gap: 28px;
     bottom: 81px;
+    right: 130px;
   }
 `;
 

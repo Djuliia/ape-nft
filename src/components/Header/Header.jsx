@@ -11,7 +11,7 @@ import sprite from '../../images/sprite.svg';
 import { useState } from 'react';
 import { MobileMenu } from 'components/MobileMenu/MobileMenu';
 
-export const Header = () => {
+export const Header = ({ isScrolled }) => {
   const [isMobileOpen, setMobileIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -24,7 +24,7 @@ export const Header = () => {
     <>
       <HeaderMenu>
         <Container>
-          <Logo $menuOpen={isMobileOpen} href="/">
+          <Logo $menuOpen={isMobileOpen} $isScrolled={isScrolled} href="/">
             <svg width="48" height="32">
               <use href={`${sprite}#logo`} />
             </svg>
@@ -80,7 +80,9 @@ export const Header = () => {
           </div>
         </Container>
       </HeaderMenu>
-      {isMobileOpen && <MobileMenu isOpen={isMobileOpen} />}
+      {isMobileOpen && (
+        <MobileMenu isOpen={isMobileOpen} setIsOpen={setMobileIsOpen} />
+      )}
     </>
   );
 };

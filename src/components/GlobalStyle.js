@@ -60,15 +60,17 @@ export const GlobalStyle = createGlobalStyle`
 
   `;
 export const Container = styled.div`
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 64px;
+  /* padding: 0px 64px; */
   /* width: 344px; */
-  width: calc(100vw-128px);
+  width: calc(100vw - 128px);
 
   @media screen and (min-width: 768px) {
+    padding: 0px 64px;
     align-items: start;
     width: 720px;
   }
