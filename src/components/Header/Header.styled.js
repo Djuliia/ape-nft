@@ -36,8 +36,7 @@ export const HeaderMenu = styled.header`
 `;
 
 export const Logo = styled.a`
-  display: ${({ $isMobileOpen, $isScrolled }) =>
-    !$isMobileOpen && $isScrolled ? 'none' : 'block'};
+  visibility: ${({ $isScrolled }) => ($isScrolled ? 'hidden' : 'visible')};
 
   svg {
     fill: ${({ $menuOpen }) =>
@@ -77,10 +76,14 @@ const buttonStyles = css`
   margin-bottom: 8px;
   border-radius: 8px;
   backdrop-filter: blur(12px);
-  background: ${({ $menuOpen }) =>
-    $menuOpen ? 'rgba(255, 255, 255, 0.1)' : 'rgba(30, 30, 30, 0.1)'};
-  color: ${({ $menuOpen }) =>
-    $menuOpen ? theme.colors.primary : theme.colors.secondary};
+  background: ${({ $menuOpen, $isScrolled }) =>
+    $menuOpen || (!$menuOpen && $isScrolled)
+      ? 'rgba(255, 255, 255, 0.1)'
+      : 'rgba(30, 30, 30, 0.1)'};
+  color: ${({ $menuOpen, $isScrolled }) =>
+    $menuOpen || (!$menuOpen && $isScrolled)
+      ? theme.colors.primary
+      : theme.colors.secondary};
   font-family: Messina Sans Mono;
   text-transform: uppercase;
   font-size: 12px;
@@ -88,17 +91,14 @@ const buttonStyles = css`
   line-height: 1.167;
   transition: color ${theme.transition};
   &:hover {
-    color: ${({ $menuOpen }) =>
-      $menuOpen ? theme.colors.accent : theme.colors.primary};
+    color: ${({ $menuOpen, $isScrolled }) =>
+      $menuOpen || (!$menuOpen && $isScrolled)
+        ? theme.colors.accent
+        : theme.colors.primary};
     text-decoration: underline;
   }
 
   @media screen and (min-width: 768px) {
-    background: rgba(30, 30, 30, 0.1);
-    color: ${theme.colors.secondary};
-    &:hover {
-      color: ${theme.colors.primary};
-    }
   }
   @media screen and (min-width: 1280px) {
     width: 80px;
@@ -116,32 +116,32 @@ export const SocialLink = styled.a`
   ${buttonStyles}
 
   svg {
-    fill: ${({ $menuOpen }) =>
-      $menuOpen ? theme.colors.primary : theme.colors.secondary};
+    fill: ${({ $menuOpen, $isScrolled }) =>
+      $menuOpen || (!$menuOpen && $isScrolled)
+        ? theme.colors.primary
+        : theme.colors.secondary};
     transition: ${theme.transition};
 
     &:hover {
-      fill: ${({ $menuOpen }) =>
-        $menuOpen ? theme.colors.accent : theme.colors.primary};
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    svg {
-      fill: ${theme.colors.secondary};
-      &:hover {
-        fill: ${theme.colors.primary};
-      }
+      fill: ${({ $menuOpen, $isScrolled }) =>
+        $menuOpen || (!$menuOpen && $isScrolled)
+          ? theme.colors.accent
+          : theme.colors.primary};
     }
   }
 `;
 
-export const MenuList = styled.ul`
+export const NavLink = styled.a`
+  ${buttonStyles}
   display: none;
 
   @media screen and (min-width: 768px) {
     display: flex;
   }
+`;
+
+export const MenuList = styled.ul`
+  display: flex;
 `;
 
 export const SocialList = styled.ul`

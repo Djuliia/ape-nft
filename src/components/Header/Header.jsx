@@ -6,6 +6,7 @@ import {
   Logo,
   MenuList,
   SocialList,
+  NavLink,
 } from './Header.styled';
 import sprite from '../../images/sprite.svg';
 import { useState } from 'react';
@@ -30,47 +31,77 @@ export const Header = ({ isScrolled }) => {
             </svg>
           </Logo>
           <div>
-            {isMenuOpen && (
-              <MenuList>
-                <li>
-                  <SocialLink href="#about">ABOUT</SocialLink>
-                </li>
-                <li>
-                  <SocialLink href="#m-map">M-MAP</SocialLink>
-                </li>
-                <li>
-                  <SocialLink href="#faq">FAQ</SocialLink>
-                </li>
-                <li>
-                  <SocialLink href="#arts">ARTS</SocialLink>
-                </li>
-                <li>
-                  <SocialLink href="#mint">MINT</SocialLink>
-                </li>
-              </MenuList>
-            )}
-
-            <BtnMenu $menuOpen={isMobileOpen} onClick={toggleMenu}>
-              {isMenuOpen ? 'Close' : 'Menu'}
-            </BtnMenu>
-
+            <MenuList>
+              {isMenuOpen && (
+                <>
+                  <li>
+                    <NavLink $isScrolled={isScrolled} href="#about">
+                      ABOUT
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink $isScrolled={isScrolled} href="#m-map">
+                      M-MAP
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink $isScrolled={isScrolled} href="#faq">
+                      FAQ
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink $isScrolled={isScrolled} href="#arts">
+                      ARTS
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink $isScrolled={isScrolled} href="#mint">
+                      MINT
+                    </NavLink>
+                  </li>
+                </>
+              )}
+              <li>
+                <BtnMenu
+                  $menuOpen={isMobileOpen}
+                  $isScrolled={isScrolled}
+                  onClick={toggleMenu}
+                >
+                  {isMenuOpen ? 'Close' : 'Menu'}
+                </BtnMenu>
+              </li>
+            </MenuList>
             <SocialList>
               <li>
-                <SocialLink $menuOpen={isMobileOpen} href="/">
+                <SocialLink
+                  $menuOpen={isMobileOpen}
+                  $isScrolled={isScrolled}
+                  href="https://discord.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   <svg width="16" height="16">
                     <use href={`${sprite}#discord`} />
                   </svg>
                 </SocialLink>
               </li>
               <li>
-                <SocialLink $menuOpen={isMobileOpen} href="/">
+                <SocialLink
+                  $menuOpen={isMobileOpen}
+                  $isScrolled={isScrolled}
+                  href="/"
+                >
                   <svg width="16" height="16">
                     <use href={`${sprite}#logomark`} />
                   </svg>
                 </SocialLink>
               </li>
               <li>
-                <SocialLink $menuOpen={isMobileOpen} href="/">
+                <SocialLink
+                  $menuOpen={isMobileOpen}
+                  $isScrolled={isScrolled}
+                  href="/"
+                >
                   <svg width="16" height="16">
                     <use href={`${sprite}#logoX`} />
                   </svg>

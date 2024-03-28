@@ -21,10 +21,10 @@ export const TitleWrap = styled.div`
 `;
 
 export const Title = styled.h2`
+  width: 269px;
   font-size: 40px;
   font-weight: 900;
   line-height: 1;
-  width: 269px;
 
   span {
     color: ${theme.colors.accent};
