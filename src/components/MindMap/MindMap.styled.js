@@ -8,7 +8,6 @@ export const Title = styled.h2`
   font-weight: 900;
   line-height: 1.1;
   text-transform: uppercase;
-  text-align: center;
 
   @media screen and (min-width: 768px) {
     font-size: 80px;
@@ -35,14 +34,13 @@ export const MapList = styled.div`
 `;
 
 export const MapItem = styled.div`
+  @media screen and (max-width: 767px) {
+    max-width: 283px;
+  }
+  margin: 0 auto;
   position: relative;
-  /* margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; */
   height: 242px;
-  /* max-width: 216px; */
-  /* padding: 24px 12px; */
+  padding: 24px 12px;
   border-radius: 12px;
   background: ${theme.colors.secondary};
   display: grid;
@@ -51,18 +49,18 @@ export const MapItem = styled.div`
   }
 
   @media screen and (min-width: 768px) {
+    margin: 0;
     padding: 24px;
     height: 100%;
   }
 
   svg {
-    grid-column: 2; /* Позиціонуємо SVG у першому стовпчику */
-    grid-row: 1; /* Позиціонуємо SVG у першому рядку */
+    grid-column: 2;
+    grid-row: 1;
     justify-self: end;
     width: 48px;
     height: 48px;
     fill: white;
-    stroke: white;
     @media screen and (min-width: 1280px) {
       width: 64px;
       height: 64px;
@@ -74,12 +72,14 @@ export const Text = styled.p`
   font-family: Messina Sans Mono;
   font-size: 12px;
   line-height: 1.167;
-  /* width: 192px; */
-  /* margin-bottom: 78px; */
+  width: 192px;
+  grid-column: span 2;
+  grid-row: 1;
+  justify-self: end;
 
   @media screen and (min-width: 768px) {
+    grid-column: 2;
     width: 128px;
-    justify-self: end;
   }
   @media screen and (min-width: 1280px) {
     width: 228px;
@@ -93,15 +93,10 @@ export const ItemTitle = styled.h3`
   font-size: 32px;
   font-weight: 900;
   line-height: 1;
-  /* position: absolute; */
-  /* bottom: 24px; */
-  /* left: 12px; */
-  grid-column: 1; /* Позиціонуємо текст у другому стовпчику */
-  grid-row: 2; /* Позиціонуємо текст у другому рядку */
-  /* align-self: end; */
-  @media screen and (min-width: 768px) {
-    left: 24px;
-  }
+  grid-column: span 2;
+  grid-row: 2;
+  align-self: end;
+
   @media screen and (min-width: 1280px) {
     font-size: 64px;
   }
@@ -124,5 +119,9 @@ export const SliderBtnWrap = styled.div`
     color: ${theme.colors.primary};
     background-color: transparent;
     border: none;
+    transition: color ${theme.transition};
+    &:hover {
+      color: ${theme.colors.accent};
+    }
   }
 `;

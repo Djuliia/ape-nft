@@ -1,7 +1,7 @@
 import { Section } from 'components/About/About.styled';
 import { ItemTitle, MapItem, MapList, Text, Title } from './MindMap.styled';
 import { Container } from 'components/GlobalStyle';
-import { MapSlider } from 'components/Slider/Slider';
+import { MapSlider } from 'components/Slider/MindMapSlider';
 import { useEffect, useState } from 'react';
 import sprite from '../../images/sprite.svg';
 
@@ -22,7 +22,6 @@ export const MindMap = () => {
     <Section id="m-map">
       <Container>
         <Title>MIND map</Title>
-        {/* <MapSlider /> */}
         {isMobile ? (
           <MapSlider />
         ) : (

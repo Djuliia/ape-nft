@@ -120,7 +120,7 @@ export const SocialLink = styled.a`
       $menuOpen || (!$menuOpen && $isScrolled)
         ? theme.colors.primary
         : theme.colors.secondary};
-    transition: ${theme.transition};
+    transition: fill ${theme.transition};
 
     &:hover {
       fill: ${({ $menuOpen, $isScrolled }) =>

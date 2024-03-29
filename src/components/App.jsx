@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { About } from './About/About';
-import { Arts } from './Arts/Atrs';
+import { Arts } from './Arts/Arts';
 import { Faq } from './Faq/Faq';
 import { GlobalStyle } from './GlobalStyle';
 import { Header } from './Header/Header';

@@ -133,7 +133,7 @@ export const Section = styled.section`
     font-weight: 900;
     line-height: 1.188;
     margin-bottom: 12px;
-    transition: ${theme.transition};
+    transition: color ${theme.transition};
     order: 1;
     &:hover {
       color: ${theme.colors.primary};
