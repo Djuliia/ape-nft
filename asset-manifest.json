@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ape-nft/static/css/main.591eda2e.css",
-    "main.js": "/ape-nft/static/js/main.91e4787b.js",
+    "main.js": "/ape-nft/static/js/main.995f298d.js",
     "static/media/BiroScriptUSPlus-Bold.eot": "/ape-nft/static/media/BiroScriptUSPlus-Bold.897b0791a0a3d59547ae.eot",
     "static/media/BiroScriptUSPlus-Bold.ttf": "/ape-nft/static/media/BiroScriptUSPlus-Bold.c25a918a0bfeeaf1fb9f.ttf",
     "static/media/BiroScriptPlus-Bold.eot": "/ape-nft/static/media/BiroScriptPlus-Bold.fa28c35bd5d22b56fa41.eot",
@@ -16,7 +16,7 @@
     "static/media/hero_tablet.png": "/ape-nft/static/media/hero_tablet.c8fcaacf26aad5de33ea.png",
     "static/media/hero_mobile.png": "/ape-nft/static/media/hero_mobile.1227a5aad4b6d47ea4d4.png",
     "static/media/about_mobile.png": "/ape-nft/static/media/about_mobile.d3779d170675f3d1bae2.png",
-    "static/media/sprite.svg": "/ape-nft/static/media/sprite.e3e70f54d58aa3ddf5a31eae99d6c219.svg",
+    "static/media/sprite.svg": "/ape-nft/static/media/sprite.1770b55a25bc5e11c666c3374e144b89.svg",
     "static/media/MessinaSansMono-Light.eot": "/ape-nft/static/media/MessinaSansMono-Light.e233c2a2bcda66e6577c.eot",
     "static/media/MessinaSansMono-Light.ttf": "/ape-nft/static/media/MessinaSansMono-Light.a12cfcff416219672fa4.ttf",
     "static/media/MessinaSansMono-SemiBold.eot": "/ape-nft/static/media/MessinaSansMono-SemiBold.84f9efad1accc034fbd7.eot",
@@ -25,16 +25,34 @@
     "static/media/MessinaSansMono-SemiBold.woff": "/ape-nft/static/media/MessinaSansMono-SemiBold.c0ee0f01ae315fe0d3c9.woff",
     "static/media/MessinaSansMono-Light.woff2": "/ape-nft/static/media/MessinaSansMono-Light.fe08efc6972be1408e2e.woff2",
     "static/media/MessinaSansMono-SemiBold.woff2": "/ape-nft/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
+    "static/media/img (8).webp": "/ape-nft/static/media/img (8).406b8ad2ed307dca7d10.webp",
+    "static/media/img (9).webp": "/ape-nft/static/media/img (9).69d7cb4f0dc30e7ad56d.webp",
+    "static/media/img2.webp": "/ape-nft/static/media/img2.90f1187eb76036e18ce0.webp",
+    "static/media/img (2).webp": "/ape-nft/static/media/img (2).8292dca0ed577601d72c.webp",
+    "static/media/img (13).webp": "/ape-nft/static/media/img (13).1b6e045abbbf1c464eb7.webp",
+    "static/media/img (14).webp": "/ape-nft/static/media/img (14).8d7f5bd452680eaf78f7.webp",
+    "static/media/img (5).webp": "/ape-nft/static/media/img (5).b7e48641bb64bc0bf8fe.webp",
+    "static/media/img (3).webp": "/ape-nft/static/media/img (3).80e06c708aee114f0ac4.webp",
+    "static/media/img (4).webp": "/ape-nft/static/media/img (4).2adae286a08ed5aff400.webp",
+    "static/media/img (11).webp": "/ape-nft/static/media/img (11).625ef4a06a43ff38f4af.webp",
+    "static/media/img4.webp": "/ape-nft/static/media/img4.fb8c8ea16d42da617e37.webp",
+    "static/media/img (6).webp": "/ape-nft/static/media/img (6).6f93e61a70ef48cccfe8.webp",
+    "static/media/img (1).webp": "/ape-nft/static/media/img (1).b2ba51aad22f4cdc65ac.webp",
+    "static/media/img (7).webp": "/ape-nft/static/media/img (7).4dd5d7866ec5e1b35227.webp",
+    "static/media/img3.webp": "/ape-nft/static/media/img3.502ecd2afe9801a828f5.webp",
+    "static/media/img1.webp": "/ape-nft/static/media/img1.a9ac1d32ce5959c114ad.webp",
+    "static/media/img (10).webp": "/ape-nft/static/media/img (10).8d27efae332967b7c97c.webp",
+    "static/media/img (12).webp": "/ape-nft/static/media/img (12).5434042d9a39666d173a.webp",
     "static/media/slick.svg": "/ape-nft/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/ape-nft/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/ape-nft/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ape-nft/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ape-nft/index.html",
     "main.591eda2e.css.map": "/ape-nft/static/css/main.591eda2e.css.map",
-    "main.91e4787b.js.map": "/ape-nft/static/js/main.91e4787b.js.map"
+    "main.995f298d.js.map": "/ape-nft/static/js/main.995f298d.js.map"
   },
   "entrypoints": [
     "static/css/main.591eda2e.css",
-    "static/js/main.91e4787b.js"
+    "static/js/main.995f298d.js"
   ]
 }
