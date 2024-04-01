@@ -19,9 +19,8 @@ import img14 from '../../images/arts/img (14).webp';
 import { useRef } from 'react';
 import {
   SliderBtnWrap,
-  SliderContainer,
-} from 'components/MindMap/MindMap.styled';
-import { ImgWrap } from 'components/Arts/Arts.styled';
+ } from 'components/MindMap/MindMap.styled';
+import { ImgWrap, SliderContainer } from 'components/Arts/Arts.styled';
 
 export const ArtsSlider = () => {
   let sliderRef = useRef(null);

@@ -55,9 +55,13 @@ export const GlobalStyle = createGlobalStyle`
   input:-webkit-autofill,
   input:-webkit-autofill:hover, 
   input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0px 1000px #1E1E1E inset;
+
 }
 
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
   `;
 export const Container = styled.div`
   margin: 0 auto;
@@ -77,4 +81,6 @@ export const Container = styled.div`
   @media screen and (min-width: 1280px) {
     width: 1160px;
   }
+
+
 `;
