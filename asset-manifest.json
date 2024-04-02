@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.591eda2e.css",
-    "main.js": "/ape-nft/static/js/main.69cd5111.js",
+    "main.css": "/ape-nft/static/css/main.807b08cf.css",
+    "main.js": "/ape-nft/static/js/main.ac13b62e.js",
     "static/media/BiroScriptUSPlus-Bold.eot": "/ape-nft/static/media/BiroScriptUSPlus-Bold.897b0791a0a3d59547ae.eot",
     "static/media/BiroScriptUSPlus-Bold.ttf": "/ape-nft/static/media/BiroScriptUSPlus-Bold.c25a918a0bfeeaf1fb9f.ttf",
     "static/media/BiroScriptPlus-Bold.eot": "/ape-nft/static/media/BiroScriptPlus-Bold.fa28c35bd5d22b56fa41.eot",
@@ -16,6 +16,7 @@
     "static/media/hero_tablet.png": "/ape-nft/static/media/hero_tablet.c8fcaacf26aad5de33ea.png",
     "static/media/hero_mobile.png": "/ape-nft/static/media/hero_mobile.1227a5aad4b6d47ea4d4.png",
     "static/media/about_mobile.png": "/ape-nft/static/media/about_mobile.d3779d170675f3d1bae2.png",
+    "static/media/RightGrotesk-CompactBlack.otf": "/ape-nft/static/media/RightGrotesk-CompactBlack.965367bf710f347153cc.otf",
     "static/media/sprite.svg": "/ape-nft/static/media/sprite.1770b55a25bc5e11c666c3374e144b89.svg",
     "static/media/MessinaSansMono-Light.eot": "/ape-nft/static/media/MessinaSansMono-Light.e233c2a2bcda66e6577c.eot",
     "static/media/MessinaSansMono-Light.ttf": "/ape-nft/static/media/MessinaSansMono-Light.a12cfcff416219672fa4.ttf",
@@ -48,11 +49,11 @@
     "static/media/slick.ttf": "/ape-nft/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ape-nft/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ape-nft/index.html",
-    "main.591eda2e.css.map": "/ape-nft/static/css/main.591eda2e.css.map",
-    "main.69cd5111.js.map": "/ape-nft/static/js/main.69cd5111.js.map"
+    "main.807b08cf.css.map": "/ape-nft/static/css/main.807b08cf.css.map",
+    "main.ac13b62e.js.map": "/ape-nft/static/js/main.ac13b62e.js.map"
   },
   "entrypoints": [
-    "static/css/main.591eda2e.css",
-    "static/js/main.69cd5111.js"
+    "static/css/main.807b08cf.css",
+    "static/js/main.ac13b62e.js"
   ]
 }
