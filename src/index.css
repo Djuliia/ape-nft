@@ -49,24 +49,8 @@
 
 @font-face {
     font-family: "Right Grotesk Compact Black";
-    src: url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.eot");
-    src: url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/b22e7f36ecc1dd3baa7403f58a178ca6.svg#Right Grotesk Compact Black")format("svg");
-}
+    src: url('./fonts/RightGrotesk-CompactBlack.otf') format('opentype');
+    font-style: normal;
+  }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

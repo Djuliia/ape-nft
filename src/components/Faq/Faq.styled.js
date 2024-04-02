@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 import { theme } from 'theme';
 
 export const FaqList = styled.ul`
+position: relative; 
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  z-index: ${({$isMobileOpen}) => $isMobileOpen ? '0' : '3'};
 
   @media screen and (min-width: 768px) {
     gap: 18px;
@@ -73,7 +75,6 @@ export const FaqItem = styled.li`
   width: 100%;
   padding: 8px 8px 10px;
   transition: border-radius, background-color ${theme.transition};
-  z-index: 3;
   @media screen and (min-width: 768px) {
     margin-top: 8px;
     padding: 18px 16px 23px 0px;

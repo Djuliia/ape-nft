@@ -1,6 +1,19 @@
+import { useEffect, useRef } from 'react';
 import { Container, Footer, MenuList } from './MobileMenu.styled';
 
 export const MobileMenu = ({ isOpen, setIsOpen }) => {
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    if (menuRef.current) {
+      if (isOpen && menuRef.current) {
+         menuRef.current.classList.add('open');
+      } else {
+        menuRef.current.classList.remove('open');
+      }
+    }
+  }, [isOpen]);
+
   const handleMenuItemClick = targetId => {
     setIsOpen(false);
     document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
@@ -8,7 +21,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }) => {
   return (
     <>
       {isOpen && (
-        <Container>
+        <Container ref={menuRef}>
           <MenuList>
             <li>
               <a href="#about" onClick={() => handleMenuItemClick('about')}>

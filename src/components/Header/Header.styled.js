@@ -3,11 +3,6 @@ import { theme } from 'theme';
 
 export const MainContainer = styled.div`
   padding: 54px 0px 24px;
-
-  /* @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  } */
   @media screen and (min-width: 1280px) {
     padding-top: 16px;
   }
@@ -39,11 +34,11 @@ export const Logo = styled.a`
   visibility: ${({ $isScrolled }) => ($isScrolled ? 'hidden' : 'visible')};
 
   svg {
-    fill: ${({ $menuOpen }) =>
-      $menuOpen ? theme.colors.primary : theme.colors.secondary};
+    fill: ${({ $isMobileOpen }) =>
+      $isMobileOpen ? theme.colors.primary : theme.colors.secondary};
     &:hover {
-      fill: ${({ $menuOpen }) =>
-        $menuOpen ? theme.colors.accent : theme.colors.primary};
+      fill: ${({ $isMobileOpen }) =>
+        $isMobileOpen ? theme.colors.accent : theme.colors.primary};
     }
   }
 
@@ -76,12 +71,12 @@ const buttonStyles = css`
   margin-bottom: 8px;
   border-radius: 8px;
   backdrop-filter: blur(12px);
-  background: ${({ $menuOpen, $isScrolled }) =>
-    $menuOpen || (!$menuOpen && $isScrolled)
+  background: ${({ $isMobileOpen, $isScrolled }) =>
+    $isMobileOpen || (!$isMobileOpen && $isScrolled)
       ? 'rgba(255, 255, 255, 0.1)'
       : 'rgba(30, 30, 30, 0.1)'};
-  color: ${({ $menuOpen, $isScrolled }) =>
-    $menuOpen || (!$menuOpen && $isScrolled)
+  color: ${({ $isMobileOpen, $isScrolled }) =>
+    $isMobileOpen || (!$isMobileOpen && $isScrolled)
       ? theme.colors.primary
       : theme.colors.secondary};
   font-family: Messina Sans Mono;
@@ -91,8 +86,8 @@ const buttonStyles = css`
   line-height: 1.167;
   transition: color ${theme.transition};
   &:hover {
-    color: ${({ $menuOpen, $isScrolled }) =>
-      $menuOpen || (!$menuOpen && $isScrolled)
+    color: ${({ $isMobileOpen, $isScrolled }) =>
+      $isMobileOpen || (!$isMobileOpen && $isScrolled)
         ? theme.colors.accent
         : theme.colors.primary};
     text-decoration: underline;
@@ -116,15 +111,15 @@ export const SocialLink = styled.a`
   ${buttonStyles}
 
   svg {
-    fill: ${({ $menuOpen, $isScrolled }) =>
-      $menuOpen || (!$menuOpen && $isScrolled)
+    fill: ${({ $isMobileOpen, $isScrolled }) =>
+      $isMobileOpen || (!$isMobileOpen && $isScrolled)
         ? theme.colors.primary
         : theme.colors.secondary};
     transition: fill ${theme.transition};
 
     &:hover {
-      fill: ${({ $menuOpen, $isScrolled }) =>
-        $menuOpen || (!$menuOpen && $isScrolled)
+      fill: ${({ $isMobileOpen, $isScrolled }) =>
+        $isMobileOpen || (!$isMobileOpen && $isScrolled)
           ? theme.colors.accent
           : theme.colors.primary};
     }

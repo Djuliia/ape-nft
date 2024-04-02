@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    font-display: swap;
     color: ${theme.colors.primary};
     background-color: ${theme.colors.bg};
   }
@@ -69,8 +70,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 0px 64px; */
-  /* width: 344px; */
   width: calc(100vw - 128px);
   @media screen and (min-width: 768px) {
     padding: 0px 64px;
@@ -81,6 +80,4 @@ export const Container = styled.div`
   @media screen and (min-width: 1280px) {
     width: 1160px;
   }
-
-
 `;

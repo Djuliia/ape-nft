@@ -14,7 +14,7 @@ text-transform: uppercase;
     gap: 24px;
     width: 397px;
   }
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     gap: 40px;
     width: 581px;
 }
@@ -46,8 +46,7 @@ font-size: 16px;
 font-weight: 900;
 line-height: 1.188;
 text-transform: uppercase;
-outline: none;
-
+transition: color ${theme.transition};    
 &:hover {
     color: ${theme.colors.secondary};
 }
@@ -86,16 +85,13 @@ outline: none;
 }
 &.error {
     border: 1px solid ${theme.colors.accent};
-    margin-bottom: 0px;
 }
 &:focus {
     border: 1px solid #fff;
 }
 
-
 @media screen and (min-width: 768px) {
     width: 200px;
-
 }
 @media screen and (min-width: 1280px) {
     width: 333px;
@@ -143,6 +139,6 @@ margin-bottom: 8px;
 
 @media screen and (min-width: 1280px) {
     font-size: 12px;
-line-height: 1.167;
+    line-height: 1.167;
 }
 `

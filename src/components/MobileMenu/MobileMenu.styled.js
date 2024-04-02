@@ -5,7 +5,6 @@ export const Container = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  /* max-height: 796px; */
   top: 0;
   left: 0;
   z-index: 1;
@@ -14,6 +13,15 @@ export const Container = styled.div`
   flex-direction: column;
   font-family: Messina Sans Mono;
   background: ${theme.colors.bg};
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &.open {
+    opacity: 1;
+  transform: translateY(0); 
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }

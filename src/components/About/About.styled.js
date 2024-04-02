@@ -21,16 +21,15 @@ export const TitleWrap = styled.div`
 `;
 
 export const Title = styled.h2`
-  width: 269px;
+  width: 216px;
   font-size: 40px;
   font-weight: 900;
   line-height: 1;
-
+  margin-bottom: 16px;
   span {
     color: ${theme.colors.accent};
   }
-  margin-bottom: 16px;
-
+ 
   @media screen and (min-width: 768px) {
     font-size: 60px;
     margin-bottom: 68px;
@@ -46,11 +45,12 @@ export const Title = styled.h2`
 
 export const Text = styled.p`
   margin-bottom: 36px;
-  width: 275px;
+  width: 216px;
   font-family: Messina Sans Mono;
   line-height: 1.188;
   text-align: end;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
+    width: 275px;
     margin-top: 11px;
   }
   @media screen and (min-width: 1280px) {
@@ -83,7 +83,7 @@ export const TextWrap = styled.div`
   align-items: center;
   gap: 16px;
   margin-bottom: 40px;
-  max-width: 283px;
+  max-width: 216px;
 
   @media screen and (min-width: 768px) {
     gap: 24px;

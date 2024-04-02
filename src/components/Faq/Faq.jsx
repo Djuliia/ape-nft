@@ -17,7 +17,7 @@ import {
 import { Title } from 'components/MindMap/MindMap.styled';
 import { useState } from 'react';
 
-export const Faq = () => {
+export const Faq = ({isMobileOpen}) => {
   const [activeItem, setActiveItem] = useState(1);
 
   const handleItemClick = index => {
@@ -28,11 +28,10 @@ export const Faq = () => {
     <Section id="faq">
       <Container>
         <Title>Faq</Title>
-        <FaqList>
+        <FaqList $isMobileOpen={isMobileOpen}>
           <FaqItem
             $isActive={activeItem === 0}
-            onClick={() => handleItemClick(0)}
-          >
+            onClick={() => handleItemClick(0)}>
             <Img src={img1} alt="monkey1"></Img>
             <Svg>
               <use href={`${sprite}#untitled3`} />
@@ -78,7 +77,7 @@ export const Faq = () => {
               </Description>
             </TextWrap>
           </FaqItem>
-          <FaqItem
+          <FaqItem 
             $isActive={activeItem === 3}
             onClick={() => handleItemClick(3)}
           >

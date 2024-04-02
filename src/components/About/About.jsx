@@ -15,10 +15,10 @@ import imgTablet from '../../images/about/about_tablet.png';
 import imgMobile from '../../images/about/about_mobile.png';
 import { Container } from 'components/GlobalStyle';
 
-export const About = ({ aboutRef }) => {
+export const About = () => {
   return (
     <>
-      <Section id="about" ref={aboutRef}>
+      <Section id="about">
         <Container>
           <TitleWrap>
             <Title>
